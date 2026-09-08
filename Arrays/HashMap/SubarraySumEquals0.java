@@ -23,4 +23,6 @@ class SubarraySumEquals0{
         map.put(sum,i);
       }
     }
+    System.out.println(maxLen);
   }
+}
