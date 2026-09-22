@@ -8,7 +8,6 @@ class Main{
             arr[i] = sc.nextInt();
         }
         int stations = sc.nextInt();
-        Arrays.sort(arr);
 
         double low = 0;
         double high = arr[arr.length-1]-arr[0];
