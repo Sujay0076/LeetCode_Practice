@@ -4,16 +4,16 @@ class Solution {
 
        for(int i=0;i<s.length();i++){
             int next =0;
-            int curr =0;
+            int current =0;
 
             switch(s.charAt(i)){
-                case 'I': curr = 1; break;
-                case 'V': curr = 5; break;
-                case 'X': curr = 10; break;
-                case 'L': curr = 50; break;
-                case 'C': curr = 100; break;
-                case 'D': curr = 500; break;
-                case 'M': curr = 1000; break; 
+                case 'I': current = 1; break;
+                case 'V': current = 5; break;
+                case 'X': current = 10; break;
+                case 'L': current = 50; break;
+                case 'C': current = 100; break;
+                case 'D': current = 500; break;
+                case 'M': current = 1000; break; 
             }
             if(i+1 < s.length()){
                 switch(s.charAt(i+1)){
@@ -27,11 +27,11 @@ class Solution {
 
                 }
             }
-            if(next > curr){
-                num -= curr;
+            if(next > current){
+                num -= current;
             }
             else{
-                num += curr;
+                num += current;
             }
        }
         return num;
